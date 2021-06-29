@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+</head>
+<body>
+  <div id="app">加载中</div>
+  <script>
+    window.$docsify = {
+      name: '项目集合',
+      repo: 'https://github.com/AWhiteMouse/collection',
+      // 定制封面页
+      coverpage: true,
+      // 定制侧边栏
+      loadSidebar: true,
+      // 定制导航栏
+      loadNavbar: true,
+      // 可配置最大支持渲染的标题层级
+      maxLevel: 2,
+      // 自定义侧边栏后默认不会再生成目录
+      subMaxLevel: 4,
+      search: {
+        placeholder: '搜索',
+        noData: '找不到结果!',
+        depth: 2
+      },
+      // 通过 {docsify-updated} 变量显示文档更新日期
+      formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
+      // 小屏设备下合并导航栏到侧边栏。
+      mergeNavbar: true,
+      // 自动追寻到根目录下的_sidebar.md
+      // alias: {
+      //   '/.*/_sidebar.md': '/_sidebar.md', //防止意外回退
+      //   '/.*/_navbar.md': '/_navbar.md' //防止意外回退
+      // },
+      // disqus评论系统支持
+      // disqus: 'shortname',
+
+      // 章节配置
+      pagination: {
+        previousText: '上一章节',
+        nextText: '下一章节',
+        crossChapter: true
+      },
+
+      // 插件
+      plugins: [
+        function (hook, vm) {
+          hook.beforeEach(function (html) {
+            var url = 'https://github.com/AWhiteMouse/collection/tree/master/docs/' + vm.route.file;
+            var editHtml = '[编辑文档](' + url + ')\n\n' + '最后编辑时间：{docsify-updated}\n';
+            var footer = [
+              '<hr>',
+              '<footer>',
+              '<span><a href="https://github.com/AWhiteMouse/collection" target="_blank">hbuecx</a> &copy;2021.</span>',
+              '<span>Proudly published with <a href="https://docsify.js.org/#/zh-cn/" target="_blank">docsify</a>.</span>',
+              '</footer>'
+            ].join('');
+
+            return editHtml + html + footer;
+          });
+        }
+      ],
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- 分页插件。上一章、下一章 -->
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <!-- 搜索js -->
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <!-- 字数统计 -->
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <!-- GitTalk评论插件 -->
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: '445c68be245b981b2e82',
+      clientSecret: '5d9626c08955e9c1512f6273cfc4c77677b2bf9b',
+      repo: 'https://github.com/AWhiteMouse/collection',
+      owner: 'chenxin',
+      admin: ['chenxin'],
+      // facebook-like distraction free mode
+      distractionFreeMode: false
+    })
+  </script>
+</body>
+</html>
