@@ -91,5 +91,11 @@
       distractionFreeMode: false
     })
   </script>
+  <!-- PWA -->
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
 </body>
 </html>
