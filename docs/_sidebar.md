@@ -5,7 +5,7 @@
     * [TChat](node/TChat.md)
 * 网站
     * [GImage](web/GImage.md)
-    * [常用网站导航](web/navigation.md)
+    * [快导航](web/KuGo.md)
     * [文章精选](web/articles.md)
     <!-- * [知识宝箱](web/fontEnd.md) -->
 * 脚手架
