@@ -21,7 +21,7 @@
 
 ### 技术栈
 
-Node、socket.io、JQuery
+`NodeJs`、`socket.io`、`JQuery`
 
 ### 项目地址
 

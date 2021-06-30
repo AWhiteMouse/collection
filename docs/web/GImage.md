@@ -23,7 +23,7 @@
 
 ### 技术栈
 
-JQuery、canvas
+`JQuery`、`canvas`
 
 ### 项目地址
 
