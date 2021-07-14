@@ -2,7 +2,8 @@
     * [小撰](mini/write.md)
     * [我的简历](mini/resume.md)
 * node开发
-    * [TChat](node/TChat.md)
+    * [TChat 1.0](node/TChat.md)
+    * [TChat 2.0](node/TChat2.md)
 * 网站
     * [GImage](web/GImage.md)
     * [快导航](web/KuGo.md)

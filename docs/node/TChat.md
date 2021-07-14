@@ -1,4 +1,4 @@
-# TChat
+# TChat 1.0
 
 ### 项目描述
 
@@ -25,4 +25,4 @@
 
 ### 项目地址
 
-[TChat](https://github.com/AWhiteMouse/node-chatRoom)
+[node-chatRoom](https://github.com/AWhiteMouse/node-chatRoom)
