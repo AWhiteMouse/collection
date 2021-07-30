@@ -42,7 +42,7 @@
 + `socket.io`: 建立socket链接
 + `ts-node`: 支持编译Typescript
 + `tsconfig-paths`: 支持ts路径别名，如@
-+ `nodemon`: 热更新和重启node服务
++ `nodemon`: 自动监测代码修改，重启服务
 
 ### 项目地址
 
